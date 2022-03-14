@@ -1,17 +1,34 @@
 :root{
     --text-1: #ffffff;
     --col-bg: #0075ff;
+    --col-bg-2: #00ff00;
 }
 
 [class^="col"] {
     background-color: var(--col-bg);
     border: 1px solid var(--text-1);
+    height: 40px;
 }
 
 #main_site{
     color: var(--text-1);
 }
 
-#main_site .col-1{
-    padding: 0.7rem;
+.green [class^="col"]{
+    background-color: var(--col-bg-2);
+    font-size: 0.7rem;
+    height: 20px;
+}
+
+.t-mid{
+    text-align:center;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.green{
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    padding: 0 10px;
 }
